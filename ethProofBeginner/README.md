@@ -30,7 +30,7 @@ CAN ALSO DEPLOY TO ANY EVM-COMPATIBLE BLOCKCHAIN OF YOUR CHOOSING BY CONNECTING 
 ### Executing program
 
 |Read Only function|input|output|
----------------------------
+|----------------|---|-------|
 |totalSupply||displays the total supply of MXC tokens at any moment|
 |tokenName||displays "macXtraCoin", the token name|
 |tokenAbbrv||displays "MXC", the token abbreviation|
@@ -38,7 +38,7 @@ CAN ALSO DEPLOY TO ANY EVM-COMPATIBLE BLOCKCHAIN OF YOUR CHOOSING BY CONNECTING 
 
 
 |function|inputs|effect|
------------------------
+|----------|-----|-------|
 |mint|address, number of tokens| creates the number of tokens specified into the address provided|
 |burn|address, number of tokens| destroys the number of tokens provided, deducting them from the balance of the address provided|
 
