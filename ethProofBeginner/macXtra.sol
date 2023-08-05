@@ -15,11 +15,12 @@ pragma solidity 0.8.19;
        to the amount that is supposed to be burned.
 */
 
-contract MyToken {
+contract macXtra {
 
     // public variables here
-    string public tokenName = "macXtra";
-    string public tokenAbbrv = "MX";
+    string public tokenName = "macXtraCoin";
+    string public tokenAbbrv = "MXC";
+
     uint public totalSupply = 0;
 
     // mapping variable here
@@ -34,11 +35,10 @@ contract MyToken {
     // burn function
    function burn(address _address, uint _amount) public {
 
-      if (balances[_address] >= _amount) {
+      require(balances[_address] >= _amount, "this user doesn't own the number of tokens you want to burn");
          
          totalSupply -= _amount;
          balances[_address] -= _amount;
-      }
     }
 
 }
