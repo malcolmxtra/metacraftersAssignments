@@ -15,7 +15,7 @@ pragma solidity 0.8.19;
        to the amount that is supposed to be burned.
 */
 
-contract macXtra {
+contract macXtraCoin {
 
     // public variables here
     string public tokenName = "macXtraCoin";
